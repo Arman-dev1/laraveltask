@@ -36,10 +36,10 @@
                             onclick="changeImage(this, '{{ asset('product-images/watch-brown.jpg') }}')"
                             alt="Brown Watch">
                         
-                        <img src="{{ asset('product-images/watch-brown2.jpg') }}" 
+                        <img src="{{ asset('product-images/watch-black.jpeg') }}" 
                             class="thumbnail" 
-                            onclick="changeImage(this, '{{ asset('product-images/watch-brown2.jpg') }}')"
-                            alt="Brown Leather Watch">
+                            onclick="changeImage(this, '{{ asset('product-images/watch-black.jpeg') }}')"
+                            alt="Black Leather Watch">
                         
                         <img src="{{ asset('product-images/watch-red.jpg') }}" 
                             class="thumbnail" 
@@ -75,9 +75,9 @@
                         <div class="option-title">Color</div>
                         <div>
                             <span class="color-option selected" style="background-color: #2a2a2a;" onclick="selectColor(this, '#2a2a2a', 'Black')"></span>
-                            <span class="color-option" style="background-color: #d4af37;" onclick="selectColor(this, '#d4af37', 'Gold')"></span>
+                            <span class="color-option" style="background-color: #483836;" onclick="selectColor(this, '#483836', 'Brown')"></span>
                             <span class="color-option" style="background-color: #a8a8a8;" onclick="selectColor(this, '#a8a8a8', 'Silver')"></span>
-                            <span class="color-option" style="background-color: #e83e8c;" onclick="selectColor(this, '#e83e8c', 'Rose Gold')"></span>
+                            <span class="color-option" style="background-color: #b8100a;" onclick="selectColor(this, '#b8100a', 'Red')"></span>
                         </div>
                         <div class="mt-2" id="selectedColorText">Color: Black</div>
                     </div>
