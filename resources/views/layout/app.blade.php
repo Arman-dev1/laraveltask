@@ -108,14 +108,13 @@
             selectedSize = size;
             $('.size-option').removeClass('selected');
             $(element).addClass('selected');
-            $('#selectedSizeText').text(`Size: ${size}`);
+            $('#selectedSizeText').text(`Size: ${size}mm`);
         }
 
         // Update quantity
         function updateQuantity(change) {
             const $quantityInput = $('#quantity');
             let quantity = parseInt($quantityInput.val()) + change;
-            quantity = Math.max(1, Math.min(10, quantity));
             $quantityInput.val(quantity);
             updateTotalPrice();
         }
@@ -203,17 +202,13 @@
             }
         }
 
-        // Initialize on page load
         $(document).ready(function() {
             updateAuthUI();
-            
-            // Update when quantity changes
             $('#quantity').on('change', function() {
                 updateAuthUI();
             });
         });
 
-        // Call this after successful login/logout
         function handleAuthChange() {
             updateAuthUI();
         }
@@ -239,6 +234,7 @@
                     data: form.serialize(),
                     success: function(response) {
                         if (response.success) {
+                            showNotification('Login Success');
                             window.location.reload();
                         }
                     },

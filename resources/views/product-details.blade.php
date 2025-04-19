@@ -3,7 +3,6 @@
     <div class="container">
         <div class="product-container">
             <div class="row">
-                <!-- Product Images Column -->
                 <div class="col-lg-6 p-4">
                     <div class="login-section d-flex justify-content-between align-items-center">
                         <span id="loginStatus" class="ms-2">
@@ -48,7 +47,6 @@
                     </div>
                 </div>
                 
-                <!-- Product Details Column -->
                 <div class="col-lg-6 p-4">
                     <div class="product-brand">Chronograph Series</div>
                     <h1 class="product-title">Luxury Automatic Watch</h1>
@@ -62,7 +60,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </span>
-                        <span class="ms-2">(42 reviews)</span>
+                        <span class="ms-2">(250 reviews)</span>
                     </div>
                     
                     <!-- Price Section -->
@@ -91,7 +89,7 @@
                             <span class="size-option" onclick="selectSize(this, '42')">42</span>
                             <span class="size-option" onclick="selectSize(this, '44')">44</span>
                         </div>
-                        <div class="mt-2" id="selectedSizeText">Size: 38</div>
+                        <div class="mt-2" id="selectedSizeText">Size: 38mm</div>
                     </div>
                     
                     <!-- Quantity Selector -->
